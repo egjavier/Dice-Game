@@ -1,0 +1,72 @@
+body {
+  height: 90vh;
+  font-family: 'Rowdies', cursive;
+  background-color: rgba(245, 222, 179, 0.377);
+  cursor: pointer;
+}
+body > div {
+  height: 95vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  font: 700 50px 'Rowdies';
+  padding: 0 30px 5px 30px
+}
+
+#playersContainer,
+#diceContainer {
+  flex-direction: row;
+  gap: 10%;
+}
+
+#player1, #player2,
+#dice1, #dice2 {
+  width: 180px;
+  text-align: center;
+  font: 400 20px 'Rowdies';
+  padding: 5px 20px;
+  border: 4px double black;
+  border-radius: 10px;
+
+}
+
+#rollBtn, #title {
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.826);
+  color:rgba(255, 255, 255, 0.938)
+}
+
+button {
+  font: 400 20px 'Rowdies';
+  padding: 10px 20px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.728);
+}
+
+@media (max-width: 480px) {
+  #title {
+    font: 700 20px 'Rowdies';
+  }
+  #player1, #player2,
+  #dice1, #dice2 {
+    width: 80px;
+    font: 400 10px 'Rowdies';
+  }
+  button {
+    font: 400 10px 'Rowdies';
+    padding: 10px 20px;
+    margin-top: 30px;
+  }
+  
+}
